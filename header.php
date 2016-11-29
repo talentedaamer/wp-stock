@@ -1,28 +1,48 @@
 <?php
 /**
  * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package wp-stock
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="wp--stock--topbar">
+	<div class="container container__topbar">
+		<div class="row row__topbar">
+			<div class="col-sm-6 col__left__topbar">
+				<?php
+				$message = 'Demo Store ! all product are for demo purpose';
+				if ( !empty($message))
+					echo "<p>{$message}</p>";
+				?>
+			</div>
+			<div class="col-sm-6 col__right__topbar">
+				<div class="topbar__menu">
+					<ul class="nav nav-pills navbar-right">
+						<li role="presentation" class="active"><a href="#">My Account</a></li>
+						<li role="presentation"><a href="#">Wishlist</a></li>
+						<li role="presentation"><a href="#">Cart [ 2 items - $50 ]</a></li>
+					</ul>
+				</div>
+				<!--topbar__menu-->
+			</div>
+		</div>
+		<!--row__topbar-->
+	</div>
+	<!--container__topbar-->
+</div>
+<!--wp--stock--topbar-->
+
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-stock' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">

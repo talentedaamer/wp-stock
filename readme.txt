@@ -13,7 +13,7 @@ A starter theme called wp-stock, or underscores.
 
 == Description ==
 
-WooCommerce, WordPress theme, based on Bootstrap 3.x
+Hi. I'm a starter theme called wp-stock, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 == Installation ==
 
@@ -29,7 +29,7 @@ wp-stock includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0.1 - August 28 2016 =
+= 1.0 - May 12 2015 =
 * Initial release
 
 == Credits ==
